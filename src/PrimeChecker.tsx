@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import isProbablyPrime from './millerrabin.ts';
 
 const PrimeChecker: React.FC = () => {
   const [number, setNumber] = useState<number | ''>('');
   const [isPrime, setIsPrime] = useState<boolean | null>(null);
 
-  const checkPrime = (num: number): boolean => {
-    if (num < 2) return false;
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0) return false;
-    }
-    return true;
+  const checkPrime = (num: number) => {
+    return isProbablyPrime(BigInt(num));
   };
 
   useEffect(() => {
