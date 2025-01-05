@@ -17,6 +17,10 @@ function App() {
       setError('Please enter a positive integer.');
       return;
     }
+    if(num > 9007199254740991) {
+      setError('Please enter a number less than 9007199254740991. BigInt is not supported yet.');
+      return
+    }
 
     setResult(primeFactorize(num));
   };
