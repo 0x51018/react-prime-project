@@ -31,6 +31,7 @@ function App() {
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <input
                 type="number"
+                inputMode="numeric"
                 value={number}
                 onChange={(e) => setNumber(e.target.value)}
                 placeholder="Enter a positive integer"
