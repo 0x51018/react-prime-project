@@ -23,6 +23,11 @@ const primeFactorize = (n: number): Record<number, number> => {
     return result;
   };
 
+  // To Do: Implement factorizor for BigInt
+  // To Do: Implement Miller-Rabin primality test
+  // To Do: Implement Pollard's rho algorithm
+  // To Do: Implement Shor's algorithm
+
   // const primeFactorizeBigInt = (n: bigint): Record<string, number> => {
   //   if (n <= 1n) {
   //     return {};
