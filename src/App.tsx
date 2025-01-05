@@ -77,7 +77,7 @@ function App() {
       </main>
       
       <footer className="bg-black text-white py-4 text-center">
-        <p className="text-sm">© 2024 Prime Factorization Tool. All rights reserved.</p>
+        <p className="text-sm">© 2024 Prime Factorization Tool by YHJ. All rights reserved.</p>
       </footer>
     </div>
   );
